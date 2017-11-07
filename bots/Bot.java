@@ -69,6 +69,7 @@ import arena.Bullet;
  *
  * @author Sam Scott
  * @version 1.0 (March 3, 2011)
+ * @version 1.1 (Nov 6 2017) ROWBOTTOM changed bot radius to 15
  */
 public abstract class Bot {
 
@@ -76,7 +77,7 @@ public abstract class Bot {
 	 * The radius of a Bot. Each Bot should fit into a circle inscribed into a
 	 * square with height and width equal to RADIUS * 2.
 	 */
-	public static final int RADIUS = 10;
+	public static final int RADIUS = 13;//ROWBOTTOM was 10
 
 	/**
 	 * This is your Bot's number, a unique identifier assigned at the beginning of each round.
