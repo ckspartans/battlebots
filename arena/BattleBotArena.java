@@ -254,7 +254,7 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 	// BOTS ALSO HAVE ACCESS TO THESE CONSTANTS
 	//*****************************************
 	/**
-	 * points per kill (multiplied by round number)
+	 * points per kill 
 	 */
 	public static final int 	KILL_SCORE = 5;
 	/**
@@ -268,7 +268,7 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 	/**
 	 * points off per exception caught
 	 */
-	public static final int 	ERROR_PENALTY = 0;
+	public static final int 	ERROR_PENALTY = 5;
 	/**
 	 * true = scores between rounds are cumulative
 	 * false = highest scoring Bot in last round is declared the winner
@@ -289,7 +289,7 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 	/**
 	 * CPU limit per Bot per round
 	 */
-	public static final double 	PROCESSOR_LIMIT = 1.0;//reduced from 2.0 due to smaller time
+	public static final double 	PROCESSOR_LIMIT = 2.0;
 	/**
 	 * Total number of Bots in round 1 (if you have fewer than this, the rest of the spots
 	 * in the array will be filled with Drones, RandBots, and Sentries).
