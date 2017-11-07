@@ -27,8 +27,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import bots.*;
-import OldBots.*;
-import SmartBot.*;
+
 
 /**
  * <b>Introduction</b>
