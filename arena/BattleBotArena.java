@@ -182,7 +182,7 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 	/**
 	 * Set to TRUE for debugging output
 	 */
-	public static final boolean DEBUG = false;
+	public static final boolean DEBUG = false;;
 
 	//***********************************************
 	// MAIN SET OF CONSTANTS AVAILABLE TO THE BOTS...
@@ -234,7 +234,7 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 	/**
 	 * Bottom edge of the screen
 	 */
-	public static final int BOTTOM_EDGE = 896; //ROWBOTTOM - changed from 500// arena panel height is this constant + TEXT_BUFFER
+	public static final int BOTTOM_EDGE = 650; //ROWBOTTOM - changed from 500// arena panel height is this constant + TEXT_BUFFER
 	/**
 	 * Left edge of the screen
 	 */
@@ -597,13 +597,21 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 		// *** HumanBot (under user control)
 		bots[0] = new HumanBot();
 		addKeyListener((HumanBot)bots[0]);
+		bots[1] = new KhanBot();
+	//	bots[2] = new SentryBot();  // Rowbottom
+	//	bots[3] = new SentryBot();  // Rowbottom
 		// ******************************
 
 		// *** INSERT PLAYER BOTS HERE. Use any array numbers you like
 		// *** as the bots will be shuffled again later.
 		// *** Any empty spots will be filled with standard arena bots.
-		//bots[7] = new SmartBot();  // Rowbottom
-		//bots[8] = new DumbBot();//Rowbottom2
+		/*
+		bots[4] = new SentryBot();  // Rowbottom
+		bots[5] = new SentryBot();  // Rowbottom
+		bots[6] = new SentryBot();  // Rowbottom
+		bots[8] = new RandBot();//Rowbottom2
+		bots[9] = new RandBot();//Rowbottom2
+		bots[10] = new RandBot();//Rowbottom2*/
 	
 		
 
