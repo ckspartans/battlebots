@@ -1,43 +1,37 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# Folder config file
-Desktop.ini
+# Package Files #
+*.jar
+*.war
+*.ear
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Eclipse
+.classpath
+.project
+.settings/
 
-# Windows shortcuts
-*.lnk
+# Intellij
+.idea/
+*.iml
+*.iws
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# Mac
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
-._*
+# Maven
+log/
+target/
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# Inclusions
+!lib/**
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Compiled Files
+*.class
+bin/
+build/
+/bin1/
+java/build/**
