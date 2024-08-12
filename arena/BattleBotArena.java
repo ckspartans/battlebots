@@ -602,34 +602,29 @@ public class BattleBotArena extends JPanel implements MouseListener, MouseWheelL
 		// *** INSERT PLAYER BOTS HERE. Use any array numbers you like
 		// *** as the bots will be shuffled again later.
 		// *** Any empty spots will be filled with standard arena bots.
-		//bots[7] = new SmartBot();  // Rowbottom
-		//bots[8] = new DumbBot();//Rowbottom2
-	
-		
 
-		//bots[15] = new RandBot();  
 		
 
 		// *******************************	
 		// Remaining slots filled with Drones, RandBots, and sentryBots.
-		//ROWBOTTOM modified to only have drones
+
 		int c = 1;
 		for (int i=0; i<NUM_BOTS; i++)
 		{
 			if (bots[i] == null)
 			{
-				//bots[i] = new DumbBot();
-				//if (c%i==1)
+				
+				if (c%i==1)
 					bots[i] = new Drone();
-			//	else {// if (c==2)
-			//		bots[i] = new RandBot();
-			//	}
-//				else
-//				{
-//					bots[i] = new SentryBot();
-//					c=0;
-//				}
-			//	c++;
+				else if (c==2)
+					bots[i] = new RandBot();
+				}
+				else
+				{
+					bots[i] = new SentryBot();
+					c=0;
+				}
+				c++;
 			}
 		}
 
